@@ -1,0 +1,4 @@
+*.css linguist-vendored
+*.svg linguist-vendored
+*.png linguist-vendored
+*.jpg linguist-vendored
