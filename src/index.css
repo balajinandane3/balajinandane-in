@@ -1,0 +1,96 @@
+/* index.css – global styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  color: #333;
+  background-color: #F5FBFA;  /* Soft background */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+section {
+  padding: 120px 100px;
+  text-align: left;
+}
+
+h1, h2 {
+  font-weight: 600;
+  letter-spacing: 4px;
+  margin: 0 0 25px 0;
+}
+
+/* Buttons */
+.btn-outline {
+  padding: 12px 28px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+  display: inline-block;
+  transition: 0.2s ease;
+}
+
+.btn-outline:hover {
+  background: #E0F2F1;
+  border-color: #009688;
+  color: #009688;
+}
+
+.page-container {
+  display: block;
+  width: 100%;
+}
+
+/* header styles */
+.header {
+  display: flex;
+  align-items: stretch;
+  padding: 25px 100px;
+  border-bottom: 1px solid #eee;
+}
+
+.header-logo {
+  font-weight: 700;
+  letter-spacing: 4px;
+  font-size: 18px;
+  color: #009688;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.header-divider {
+  width: 1px;
+  background-color: #009688;
+  margin: 0 15px;
+}
+
+.header-links {
+  display: flex;
+  align-items: center;
+}
+
+.header-links button {
+  background: none;
+  border: none;
+  padding: 0 12px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.header-links button:hover {
+  color: #009688;
+}
+
+.header-links button:not(:last-child)::after {
+  content: "|";
+  margin-left: 12px;
+  margin-right: 12px;
+  color: #009688;
+}

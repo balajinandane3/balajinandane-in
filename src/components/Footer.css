@@ -1,0 +1,266 @@
+/* ================= Global Reset ================= */
+html, body, #root, .App {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: #f9fafc;
+  color: #222;
+  font-size: 16px; /* standard base font */
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1; /* push footer to bottom */
+  padding: 2rem;
+}
+
+/* ================= Header ================= */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.header .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4f46e5;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li button {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: #4f46e5;
+  background: #e0e7ff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-links li button:hover {
+  background: #4f46e5;
+  color: white;
+}
+
+/* ================= Footer ================= */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #1f2937;
+  color: #bbb;
+  margin-top: auto;
+  font-size: 1.1rem;
+}
+
+/* ================= Hero Section ================= */
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255,255,255,0.05);
+  transform: rotate(45deg);
+  animation: slide 20s linear infinite;
+}
+
+@keyframes slide {
+  0% { transform: translate(0,0) rotate(45deg); }
+  100% { transform: translate(50%,50%) rotate(45deg); }
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.hero .highlight {
+  color: #ffd700;
+}
+
+.hero p {
+  font-size: 1.7rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ================= About Section ================= */
+.block.about {
+  background: linear-gradient(135deg, #d0e8f2, #a0c4e8);
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  font-size: 1.15rem; /* base font size */
+  line-height: 1.7;
+}
+
+.block.about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 1px);
+  background-size: 20px 20px;
+  pointer-events: none;
+}
+
+.block.about:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.about-content {
+  padding-left: 0; /* no vertical line */
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.about-content h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Skills / Tools badges */
+.skill-badge {
+  display: inline-block;
+  background: #4f46e5;
+  color: white;
+  font-size: 0.95rem;
+  padding: 4px 10px;
+  border-radius: 8px;
+  margin: 4px 4px 4px 0;
+}
+
+/* ================= Projects Section ================= */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background:white;
+  border-radius:15px;
+  padding:2.5rem;
+  box-shadow:0 6px 20px rgba(0,0,0,0.08);
+  text-align:center;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+  background: linear-gradient(135deg, #e0e7ff, #c7d2fe);
+}
+
+.project-card h3 {
+  font-size: 1.8rem;
+  color: #4f46e5;
+  margin-bottom: 1rem;
+}
+
+.project-card p {
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.project-card a {
+  text-decoration:none;
+  color:#4f46e5;
+  font-weight:bold;
+}
+
+.project-card a:hover {
+  text-decoration:underline;
+}
+
+/* ================= Contact Section ================= */
+.block.contact {
+  background: linear-gradient(135deg, #fef3c7, #fde68a);
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  font-size: 1.2rem;
+}
+
+.contact-links {
+  display:flex;
+  justify-content:center;
+  gap:2rem;
+  margin-top:1rem;
+}
+
+.contact-links a {
+  text-decoration:none;
+  font-size:1.3rem;
+  padding:12px 20px;
+  border-radius:8px;
+  background:#f3f4f6;
+  transition:0.3s, box-shadow 0.3s;
+}
+
+.contact-links a:hover {
+  background:#4f46e5;
+  color:white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* ================= Section Fade-in Animation ================= */
+.block {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.block.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}

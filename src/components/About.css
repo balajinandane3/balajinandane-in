@@ -1,0 +1,17 @@
+.about {
+  padding: 120px 100px;   /* THE MISSING PART */
+      padding-top: 60px !important; 
+
+}
+
+.about h2 {
+  letter-spacing: 4px;
+  margin-bottom: 25px;
+  color: #009688;
+}
+
+.about p {
+  max-width: 780px;
+  line-height: 1.8;
+  color: #555;
+}

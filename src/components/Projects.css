@@ -1,0 +1,65 @@
+.projects {
+  padding: 120px 100px;
+    padding-top: 60px !important; 
+
+}
+
+
+.project-item {
+  margin-bottom: 70px;
+}
+
+.project-item h3 {
+  font-size: 22px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  color: #009688; /* Teal project title */
+}
+
+.project-item p {
+  max-width: 800px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Teal Badge */
+.badge-blue {
+  background: #E0F2F1;
+  color: #009688;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 12px;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+/* "View Details" link */
+.project-link {
+  color: #009688;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.project-link:hover {
+  opacity: 0.7;
+}
+.projects {
+  padding: 120px 100px;     /* <<< SAME AS ABOUT */
+}
+
+.projects h2 {
+  color: #009688;
+  margin-bottom: 50px;
+}
+.badge-personal {
+  background: #ffcc80;   /* soft orange */
+  color: #d85f00;        /* dark orange text */
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 12px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}

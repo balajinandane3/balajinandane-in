@@ -1,0 +1,11 @@
+.hero-title {
+  font-size: 28px;
+  letter-spacing: 6px;
+  font-weight: 600;
+  color: #009688; /* Teal accent */
+}
+
+.hero {
+  padding: 120px 100px;   /* <<< SAME AS ABOUT */
+}
+

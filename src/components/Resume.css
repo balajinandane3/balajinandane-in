@@ -1,0 +1,58 @@
+.resume {
+  padding: 120px 100px;
+  padding-top: 60px !important; 
+}
+
+/* Title: RESUME */
+.resume h2,a {
+  letter-spacing: 4px;
+  margin-bottom: 25px;
+  color: #009688;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Horizontal menu */
+.resume-nav {
+  display: flex;
+  gap: 22px;
+  margin-bottom: 50px;
+}
+
+.resume-nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.resume-nav a:hover {
+  color: #009688; /* Teal hover */
+}
+
+/* ---- ONLY SUMMARY SECTION HAS LINE ---- */
+#resume-main {
+  margin-bottom: 70px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e0e0e0;  /* SINGLE divider line */
+}
+
+/* Section titles (EDUCATION, EXPERIENCE, etc.) */
+.resume-section h3 {
+  letter-spacing: 2px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #009688;
+}
+
+/* Section text */
+.resume-section p {
+  max-width: 780px;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Smooth scroll for menu */
+html {
+  scroll-behavior: smooth;
+}
